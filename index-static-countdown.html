@@ -21,7 +21,7 @@
         <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
 
         <!-- ============== Resources style ============== -->
-        <link rel="stylesheet" href="css/style-static.css" />
+        <link rel="stylesheet" href="css/style-static-countdown.css" />
 
 		<!-- Modernizr runs quickly on page load to detect features -->
 		<script src="js/modernizr.custom.js"></script>
@@ -86,7 +86,9 @@
 
 			    	<div id="home-text">
 
-						<h1 class="text-intro">Strong and Sophisticated.</h1>
+						<!-- <h1 class="text-intro">Strong and Sophisticated.</h1> -->
+
+						<h1 class="text-intro text-countdown">Launching in <div id="getting-started"></div></h1>
 
 						<h2 class="text-intro">Perfect and awesome template to present your future product or service.<br>
 									Hooking audience attention is all in the opener.</h2>
@@ -599,6 +601,19 @@
 
 	<!-- Slideshow/Image Info part plugin -->
 	<script src="js/vegas.js"></script>
+
+	<!-- Countdown plugin -->
+	<script src="js/jquery.countdown.js"></script>
+
+	<script>
+	$("#getting-started")
+		// Year/Month/Day Hour:Minute:Second
+		.countdown("2016/10/24 15:30:30", function(event) {
+			$(this).html(
+				event.strftime('%D Days %Hh %Mm <span class="second-timer">%Ss</span>')
+			);
+	});
+	</script>
 
 	<!-- External common plugins -->
 	<script src="js/plugins.js"></script>

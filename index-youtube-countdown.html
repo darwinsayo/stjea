@@ -21,13 +21,16 @@
         <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
 
         <!-- ============== Resources style ============== -->
-        <link rel="stylesheet" href="css/style-static.css" />
+        <link rel="stylesheet" href="css/style-youtube-countdown.css" />
 
 		<!-- Modernizr runs quickly on page load to detect features -->
 		<script src="js/modernizr.custom.js"></script>
 	</head>
 	
 	<body>
+
+		<!-- YouTube link -->
+		<a id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/tDvBwPzJ7dY',containment:'body',autoPlay:true, mute:false, startAt:0, stopAt:0, opacity:1}"></a>
 
 		<!-- START LOADING -->
 		<div id="loading">
@@ -69,11 +72,9 @@
 
 			        <div class="Wallop-item Static-sliderItem Wallop-item--current">
 
-			            <div class="Static-sliderItemImage first-slide"></div>
-
 			            <div class="Static-sliderItemText">
-			            	<p class="credit"><i class="icon ion-camera"></i> Photo by Brigitte van Sambeek<br>
-			            	<i class="icon ion-information-circled"></i> Malinois, Belgian Shepherd Dog</p>
+			            	<p class="credit"><i class="icon ion-videocamera"></i> Lamborghini Official<br>
+			            	<i class="icon ion-information-circled"></i> Aventador LP700-4</p>
 			            </div>
 
 			        </div>
@@ -86,7 +87,9 @@
 
 			    	<div id="home-text">
 
-						<h1 class="text-intro">Strong and Sophisticated.</h1>
+						<!-- <h1 class="text-intro">Strong and Sophisticated.</h1> -->
+
+						<h1 class="text-intro text-countdown">Launching in <div id="getting-started"></div></h1>
 
 						<h2 class="text-intro">Perfect and awesome template to present your future product or service.<br>
 									Hooking audience attention is all in the opener.</h2>
@@ -113,6 +116,29 @@
 				<!-- END SCROLL ARROWS BOTTOM -->
 
 			</div>
+
+			<!-- START PLAYER CONTROL -->
+			<nav id="player-nav">
+				<ul>
+					<li data-toggle="tooltip" data-placement="top" data-title="Play" data-trigger="hover">
+						<a onclick="$('#bgndVideo').playYTP()"><i class="fa fa-play"></i></a>
+					</li>
+
+					<li data-toggle="tooltip" data-placement="top" data-title="Pause" data-trigger="hover">
+						<a onclick="$('#bgndVideo').pauseYTP()"><i class="fa fa-pause"></i></a>
+					</li>
+
+					<li class="full-play" data-toggle="tooltip" data-placement="top" data-title="Fullscreen" data-trigger="hover">
+						<a class="expand-player"><i class="fa fa-expand"></i></a>
+					</li>
+
+					<li class="comp-play display-none" data-toggle="tooltip" data-placement="top" data-title="Reduce" data-trigger="hover">
+						<a class="compress-player"><i class="fa fa-compress"></i></a>
+					</li>
+
+				</ul>
+			</nav>
+			<!-- END PLAYER CONTROL -->
 
 		</section>
 		<!-- END HOME PART -->
@@ -594,17 +620,30 @@
 	<!-- Google Maps API -->
 	<script src="http://maps.google.com/maps/api/js"></script>
 
-	<!-- Slideshow/Image plugin -->
-	<script src="js/wallop.js"></script>
-
 	<!-- Slideshow/Image Info part plugin -->
 	<script src="js/vegas.js"></script>
+
+	<!-- YouTube plugin -->
+	<script src="js/jquery.mb.YTPlayer.js"></script>
+
+	<!-- Countdown plugin -->
+	<script src="js/jquery.countdown.js"></script>
+
+	<script>
+	$("#getting-started")
+		// Year/Month/Day Hour:Minute:Second
+		.countdown("2016/10/24 15:30:30", function(event) {
+			$(this).html(
+				event.strftime('%D Days %Hh %Mm <span class="second-timer">%Ss</span>')
+			);
+	});
+	</script>
 
 	<!-- External common plugins -->
 	<script src="js/plugins.js"></script>
 
 	<!-- Main JS File -->
-	<script src="js/main-static.js"></script>
+	<script src="js/main-youtube.js"></script>
 	
 	<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 

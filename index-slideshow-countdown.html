@@ -21,7 +21,7 @@
         <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
 
         <!-- ============== Resources style ============== -->
-        <link rel="stylesheet" href="css/style-static.css" />
+        <link rel="stylesheet" href="css/style-slideshow-countdown.css" />
 
 		<!-- Modernizr runs quickly on page load to detect features -->
 		<script src="js/modernizr.custom.js"></script>
@@ -52,7 +52,7 @@
 					<div class="big ball"></div>
 				</div>
 
-				<!-- Text under the loading animation is in your main css file, style-static.css/scss, under the rule #loading .small-second:after -->
+				<!-- Text under the loading animation is in your main css file, style.css/scss, under the rule #loading .small-second:after -->
 
 			</div>
 
@@ -64,29 +64,94 @@
 
 			<div id="firefly-anim" class="Wallop Wallop--fade">
 
-			    <!-- START BACKGROUND / TEXT BOTTOM LEFT -->
 			    <div class="Wallop-list">
 
+			        <!-- START 1st SLIDE / TEXT BOTTOM LEFT -->
 			        <div class="Wallop-item Static-sliderItem Wallop-item--current">
 
 			            <div class="Static-sliderItemImage first-slide"></div>
 
 			            <div class="Static-sliderItemText">
-			            	<p class="credit"><i class="icon ion-camera"></i> Photo by Brigitte van Sambeek<br>
-			            	<i class="icon ion-information-circled"></i> Malinois, Belgian Shepherd Dog</p>
+			            	<p class="credit"><i class="icon ion-camera"></i> Photo by Sylvain Guiheneuc<br>
+			            	<i class="icon ion-ios-navigate"></i> Somewhere in the Mountains</p>
+			            </div>
+
+			        </div>
+			        <!-- END 1st SLIDE / TEXT BOTTOM LEFT -->
+
+			        <!-- START 2nd SLIDE / TEXT BOTTOM LEFT -->
+			        <div class="Wallop-item Static-sliderItem">
+
+			            <div class="Static-sliderItemImage second-slide"></div>
+
+			            <div class="Static-sliderItemText">
+			            	<p class="credit"><i class="icon ion-camera"></i> Photo by Eric Huang<br>
+			            	<i class="icon ion-ios-navigate"></i> Taipei City, Taiwan</p>
+			            </div>
+
+			        </div>
+			        <!-- END 2nd SLIDE / TEXT BOTTOM LEFT -->
+
+			        <!-- START 3rd SLIDE / TEXT BOTTOM LEFT -->
+			        <div class="Wallop-item Static-sliderItem">
+			            
+			            <div class="Static-sliderItemImage third-slide"></div>
+
+			            <div class="Static-sliderItemText">
+			            	<p class="credit"><i class="icon ion-camera"></i> Photo by Paul Jarvis<br>
+			            	<i class="icon ion-ios-navigate"></i> East Sooke Park, British Columbia</p>
+			            </div>
+
+			        </div>
+			        <!-- END 3rd SLIDE / TEXT BOTTOM LEFT -->
+
+			        <!-- START 4th SLIDE / TEXT BOTTOM LEFT -->
+			        <div class="Wallop-item Static-sliderItem">
+
+			            <div class="Static-sliderItemImage fourth-slide"></div>
+
+			            <div class="Static-sliderItemText">
+			            	<p class="credit"><i class="icon ion-camera"></i> Photo by Cameron Kirby<br>
+			            	<i class="icon ion-ios-navigate"></i> Encitinas, California</p>
+			            </div>
+
+			        </div>
+			        <!-- END 4th SLIDE / TEXT BOTTOM LEFT -->
+
+			        <!-- Uncomment next lines if you need more slides, just copy/paste to get more ;-) Make sure to replace the class "HELLO-slide" -->
+
+			        <!-- <div class="Wallop-item Static-sliderItem">
+
+			            <div class="Static-sliderItemImage fifth-slide"></div>
+
+			            <div class="Static-sliderItemText">
+			            	<p class="credit"><i class="icon ion-camera"></i> Photo by **** ****<br>
+			            	<i class="icon ion-ios-navigate"></i> In the ****, on an ****.</p>
 			            </div>
 
 			        </div>
 
+			        <div class="Wallop-item Static-sliderItem">
+
+			            <div class="Static-sliderItemImage sixth-slide"></div>
+
+			            <div class="Static-sliderItemText">
+			            	<p class="credit"><i class="icon ion-camera"></i> Photo by **** ****<br>
+			            	<i class="icon ion-ios-navigate"></i> In the ****, on an ****.</p>
+			            </div>
+
+			        </div> -->
+
 			    </div>
-			    <!-- END BACKGROUND / TEXT BOTTOM LEFT -->
 
 			    <!-- START MAIN TEXT / BUTTONS -->
 			    <div class="content">
 
 			    	<div id="home-text">
 
-						<h1 class="text-intro">Strong and Sophisticated.</h1>
+						<!-- <h1 class="text-intro">Strong and Sophisticated.</h1> -->
+
+						<h1 class="text-intro text-countdown">Launching in <div id="getting-started"></div></h1>
 
 						<h2 class="text-intro">Perfect and awesome template to present your future product or service.<br>
 									Hooking audience attention is all in the opener.</h2>
@@ -99,6 +164,11 @@
 
 				</div>
 				<!-- END MAIN TEXT / BUTTONS -->
+
+			    <!-- START SLIDE NAVIGATION -->
+			    <button class="Wallop-buttonPrevious"><i class="icon ion-chevron-left"></i></button>
+	  			<button class="Wallop-buttonNext"><i class="icon ion-chevron-right"></i></button>
+	  			<!-- END SLIDE NAVIGATION -->
 
 				<!-- START SCROLL ARROWS BOTTOM -->
 				<div class="scroll-indicator">
@@ -600,11 +670,24 @@
 	<!-- Slideshow/Image Info part plugin -->
 	<script src="js/vegas.js"></script>
 
+	<!-- Countdown plugin -->
+	<script src="js/jquery.countdown.js"></script>
+
+	<script>
+	$("#getting-started")
+		// Year/Month/Day Hour:Minute:Second
+		.countdown("2016/10/24 15:30:30", function(event) {
+			$(this).html(
+				event.strftime('%D Days %Hh %Mm <span class="second-timer">%Ss</span>')
+			);
+	});
+	</script>
+
 	<!-- External common plugins -->
 	<script src="js/plugins.js"></script>
 
 	<!-- Main JS File -->
-	<script src="js/main-static.js"></script>
+	<script src="js/main-slideshow.js"></script>
 	
 	<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 
