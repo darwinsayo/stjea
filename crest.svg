@@ -17,9 +17,9 @@
     </g>
     <path d="M120 22V40" stroke="#b08d3c" stroke-width="0"/>
     <!-- stars -->
-    <g fill="#e9c872">
-      <path d="M44 38l3 7 7 .6-5.3 4.7 1.7 7-6.4-3.8-6.4 3.8 1.7-7L34 45.6l7-.6z" transform="scale(.8) translate(14 8)"/>
-      <path d="M196 38l3 7 7 .6-5.3 4.7 1.7 7-6.4-3.8-6.4 3.8 1.7-7L186 45.6l7-.6z" transform="scale(.8) translate(-30 8)"/>
+    <g fill="#e9c872" stroke="#2e2118" stroke-width="1">
+      <polygon points="0.00,-10.00 2.35,-3.24 9.51,-3.09 3.80,1.24 5.88,8.09 0.00,4.00 -5.88,8.09 -3.80,1.24 -9.51,-3.09 -2.35,-3.24" transform="translate(40 70)"/>
+      <polygon points="0.00,-10.00 2.35,-3.24 9.51,-3.09 3.80,1.24 5.88,8.09 0.00,4.00 -5.88,8.09 -3.80,1.24 -9.51,-3.09 -2.35,-3.24" transform="translate(200 70)"/>
     </g>
     <!-- rose -->
     <path d="M120 190V252" stroke="#4f5d32" stroke-width="4" stroke-linecap="round"/>
