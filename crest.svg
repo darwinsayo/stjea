@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320" role="img" aria-label="Crest of St. Josemaría Escrivá Academy">
+  <defs>
+    <clipPath id="s"><path d="M24 22H216V128C216 204 160 244 120 262C80 244 24 204 24 128Z"/></clipPath>
+  </defs>
+  <path d="M14 12H226V130C226 214 166 256 120 276C74 256 14 214 14 130Z" fill="#b08d3c"/>
+  <path d="M24 22H216V128C216 204 160 244 120 262C80 244 24 204 24 128Z" fill="#f6efe0"/>
+  <g clip-path="url(#s)">
+    <rect x="24" y="22" width="192" height="92" fill="#6b1d2a"/>
+    <path d="M24 114H216" stroke="#b08d3c" stroke-width="4"/>
+    <!-- open book -->
+    <path d="M120 96C104 84 80 82 58 88V50C80 44 104 46 120 58Z" fill="#e9c872" stroke="#2e2118" stroke-width="2"/>
+    <path d="M120 96C136 84 160 82 182 88V50C160 44 136 46 120 58Z" fill="#f2d98d" stroke="#2e2118" stroke-width="2"/>
+    <path d="M120 58V96" stroke="#2e2118" stroke-width="2.5"/>
+    <g stroke="#6b1d2a" stroke-width="1.5" opacity=".6">
+      <path d="M68 60C84 57 100 59 112 66M68 69C84 66 100 68 112 75M68 78C84 75 100 77 112 84"/>
+      <path d="M172 60C156 57 140 59 128 66M172 69C156 66 140 68 128 75M172 78C156 75 140 77 128 84"/>
+    </g>
+    <path d="M120 22V40" stroke="#b08d3c" stroke-width="0"/>
+    <!-- stars -->
+    <g fill="#e9c872">
+      <path d="M44 38l3 7 7 .6-5.3 4.7 1.7 7-6.4-3.8-6.4 3.8 1.7-7L34 45.6l7-.6z" transform="scale(.8) translate(14 8)"/>
+      <path d="M196 38l3 7 7 .6-5.3 4.7 1.7 7-6.4-3.8-6.4 3.8 1.7-7L186 45.6l7-.6z" transform="scale(.8) translate(-30 8)"/>
+    </g>
+    <!-- rose -->
+    <path d="M120 190V252" stroke="#4f5d32" stroke-width="4" stroke-linecap="round"/>
+    <path d="M120 228C100 226 90 214 88 204C106 204 118 212 120 228Z" fill="#5b6b3a"/>
+    <path d="M120 238C140 236 150 224 152 214C134 214 122 222 120 238Z" fill="#5b6b3a"/>
+    <g fill="#6b1d2a" stroke="#2e2118" stroke-width="1.5">
+      <circle cx="120" cy="144" r="19"/><circle cx="141" cy="159" r="19"/><circle cx="133" cy="183" r="19"/>
+      <circle cx="107" cy="183" r="19"/><circle cx="99" cy="159" r="19"/>
+    </g>
+    <circle cx="120" cy="165" r="22" fill="#8a2a3a" stroke="#2e2118" stroke-width="1.5"/>
+    <path d="M108 166a12 12 0 0 1 22-6M112 174a9 9 0 0 0 14-1M120 160a5 5 0 1 1-5 5" fill="none" stroke="#e9c872" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <path d="M24 22H216V128C216 204 160 244 120 262C80 244 24 204 24 128Z" fill="none" stroke="#2e2118" stroke-width="2.5"/>
+  <!-- ribbon -->
+  <path d="M30 276Q120 300 210 276L222 296L210 314Q120 336 30 314L18 296Z" transform="translate(0 -14)" fill="#6b1d2a" stroke="#2e2118" stroke-width="2"/>
+  <path id="arc" d="M40 291Q120 313 200 291" fill="none"/>
+  <text font-family="Cinzel, 'Trajan Pro', Georgia, serif" font-size="19" font-weight="700" letter-spacing="5" fill="#f2d98d" text-anchor="middle">
+    <textPath href="#arc" startOffset="50%">SERVIAM</textPath>
+  </text>
+</svg>
