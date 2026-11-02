@@ -47,3 +47,10 @@ footer .m{font-family:'Cinzel',serif;letter-spacing:.3em;color:var(--gold-l);fon
 .pic{max-width:340px;margin:0 auto}
 .pic p{font-size:.95rem;font-style:italic;text-align:center;margin-top:.8rem;color:#6a5a48}
 @media(max-width:700px){.split{grid-template-columns:1fr}.split.rev .pic{order:0}}
+
+.stats{background:var(--burg-d);color:var(--cream);border-bottom:6px solid var(--gold)}
+.stats .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;max-width:1000px;padding-top:2.6rem;padding-bottom:2.6rem}
+.stat{text-align:center;padding:0 .5rem}
+.stat+.stat{border-left:1px solid rgba(233,200,114,.4)}
+.stat b{display:block;font-family:'Cinzel',serif;font-size:clamp(2.2rem,6vw,3.8rem);color:var(--gold-l);line-height:1.1;letter-spacing:.04em}
+.stat span{display:block;font-family:'Cinzel',serif;font-size:clamp(.62rem,1.7vw,.85rem);letter-spacing:.16em;text-transform:uppercase;margin-top:.7rem;color:#efe3c3}
