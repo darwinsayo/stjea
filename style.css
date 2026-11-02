@@ -59,14 +59,6 @@ section{padding:6rem 0}
 .quote blockquote{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:300;font-style:italic;line-height:1.35;color:var(--burg-d)}
 .quote cite{display:block;font-style:normal;font-size:.8rem;color:var(--gold);margin-top:1.6rem}
 
-.events .list{list-style:none;padding:0;margin-top:1rem;border-top:1px solid var(--rule)}
-.events li{display:grid;grid-template-columns:96px 1fr;gap:1.8rem;padding:1.8rem 0;border-bottom:1px solid var(--rule)}
-.when{text-align:center;color:var(--burg)}
-.when b{display:block;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:3rem;line-height:.95;letter-spacing:0}
-.when span{display:block;font-size:.72rem;line-height:1.3;margin-top:.3rem;color:var(--gold)}
-.events h3{color:var(--burg-d);font-size:1.5rem}
-.meta{font-size:.74rem;color:var(--gold);margin:.25rem 0 .5rem}
-.events li p+p{margin-top:0}
 
 .prose.alt{background:var(--paper);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
 .how{margin-top:1rem}
@@ -89,3 +81,20 @@ footer .small+.small{margin-top:.6rem;font-family:'Cormorant Garamond',serif;let
  .events li{grid-template-columns:70px 1fr;gap:1rem}
  section{padding:4rem 0}
 }
+
+.events .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4rem;margin-top:1rem}
+.card .pic{display:block;position:relative;overflow:hidden;aspect-ratio:4/3;border:1px solid var(--rule);padding:8px;background:var(--paper)}
+.card .pic img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 35%;transition:transform .5s}
+.card .pic:hover img{transform:scale(1.03)}
+.card .date{position:absolute;left:0;top:0;background:var(--burg);color:#fff;text-align:center;padding:.55rem .8rem .5rem;min-width:66px;font-size:.72rem;color:var(--gold-l);letter-spacing:.14em;border-right:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.card .date b{display:block;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:2rem;line-height:1;color:#fff;letter-spacing:0;margin-bottom:.15rem}
+.card .cat{font-size:.72rem;color:var(--gold);margin:1.1rem 0 .3rem}
+.card h3{font-size:1.5rem;line-height:1.15}
+.card h3 a{color:var(--burg-d);text-decoration:none;border-bottom:1px solid transparent}
+.card h3 a:hover{border-color:var(--gold)}
+.card .meta{font-size:.74rem;color:var(--burg);margin:.4rem 0 .6rem}
+.card p+p{margin-top:0;font-size:1.1rem;line-height:1.5}
+.events .center{margin-top:3rem}
+.btn.dark{border-color:var(--burg);color:var(--burg)}
+.btn.dark:hover{background:var(--burg);color:#fff}
+@media(max-width:860px){.events .cards{grid-template-columns:1fr;gap:2rem}}
