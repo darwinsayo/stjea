@@ -35,8 +35,8 @@
   <path d="M24 22H216V128C216 204 160 244 120 262C80 244 24 204 24 128Z" fill="none" stroke="#2e2118" stroke-width="2.5"/>
   <!-- ribbon -->
   <path d="M30 276Q120 300 210 276L222 296L210 314Q120 336 30 314L18 296Z" transform="translate(0 -14)" fill="#6b1d2a" stroke="#2e2118" stroke-width="2"/>
-  <path id="arc" d="M40 291Q120 313 200 291" fill="none"/>
-  <text font-family="Cinzel, 'Trajan Pro', Georgia, serif" font-size="19" font-weight="700" letter-spacing="5" fill="#f2d98d" text-anchor="middle">
-    <textPath href="#arc" startOffset="50%">SERVIAM</textPath>
+  <path id="arc" d="M30 290Q120 312 210 290" fill="none"/>
+  <text font-family="Cinzel, 'Trajan Pro', Georgia, serif" font-size="12.5" font-weight="700" letter-spacing="2" fill="#f2d98d" text-anchor="middle">
+    <textPath href="#arc" startOffset="50%" textLength="170" lengthAdjust="spacing">FIDES · SPES · CARITAS</textPath>
   </text>
 </svg>
